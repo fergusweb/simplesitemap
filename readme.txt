@@ -4,7 +4,7 @@ Author URI:         https://www.ferguson.codes
 Contributors:		ajferg
 Requires at least:	5.0
 Tested up to:		6.6
-Stable tag:			1.4.0
+Stable tag:			1.4.1
 Requires PHP:       7.4
 License:            GPLv3 or later
 License URI:        https://www.gnu.org/licenses/gpl-3.0.html
@@ -45,6 +45,9 @@ No, I haven't build that feature yet.
 
 
 == Changelog ==
+
+= 1.4.1 =
+* Release using github build tools
 
 = 1.4.0 =
 * Refactor plugin, and set up a git repo with SVN deployment
