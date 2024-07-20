@@ -1,0 +1,21 @@
+
+
+.sitemap { }
+.sitemap p { display:block; margin:0.3em; padding:0; clear:left; }
+.sitemap p input { }
+.sitemap p label { float:left; width:9em; display:block; }
+.sitemap p.tick { }
+.sitemap p.tick label { display:block; float:none; width:auto; padding:0.3em 0 0.1em; }
+.sitemap p.tick input { margin:0 0.5em 0 1.5em; }
+.sitemap .scrolling { display:block; height:15em; overflow:auto; border:1px solid #CCC; background:#FFF; margin:0.4em 0.5em 2em; padding:0.3em; } 
+
+.sitemap p.tick .level_0 { }
+.sitemap p.tick .level_1 { padding-left:2em; }
+.sitemap p.tick .level_2 { padding-left:4em; }
+.sitemap p.tick .level_3 { padding-left:6em; }
+
+.sitemap fieldset { border:1px solid #CCC; clear:both; padding:0.5em; margin-bottom:1em; }
+.sitemap fieldset legend { font-weight:bold; padding:0.2em 1em; }
+.sitemap fieldset p label { width:15em; }
+
+#xml_alert { float:right; margin-top:-2em; }
