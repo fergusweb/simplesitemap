@@ -108,7 +108,7 @@ class SimpleSitemap_Public {
 	 * @param boolean $classes    CSS classes to include.
 	 * @return void
 	 */
-	private function sitemap_show_hierarchical( $post_type = 'page', $classes = false ) {
+	public function sitemap_show_hierarchical( $post_type = 'page', $classes = false ) {
 		if ( is_string( $classes ) ) {
 			$classes = array( $classes );
 		}
@@ -137,7 +137,7 @@ class SimpleSitemap_Public {
 	 * @param boolean $classes    CSS classes to include.
 	 * @return void|array
 	 */
-	private function sitemap_show_non_hierarchical( $post_type = 'page', $classes = false ) {
+	public function sitemap_show_non_hierarchical( $post_type = 'page', $classes = false ) {
 		if ( is_string( $classes ) ) {
 			$classes = array( $classes );
 		}

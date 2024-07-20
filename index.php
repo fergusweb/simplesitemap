@@ -3,7 +3,7 @@
  * Plugin Name: 	SimpleSitemap
  * Plugin URI:  	https://www.ferguson.codes/software/simplesitemap/
  * Description: Generate a sitemap to a page on your site.  By default, it will generate a list of Pages, Posts and Products.  You can use the shortcode to show custom types if you want to: <code>[simplesitemap view="POST_TYPE"]</code>
- * Version:     	1.4.3
+ * Version:     	1.4.4
  * Author:      	Anthony Ferguson
  * Author URI:  	https://www.ferguson.codes
  * License:     	GPLv3 or later

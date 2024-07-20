@@ -4,7 +4,7 @@ Author URI:         https://www.ferguson.codes
 Contributors:		ajferg
 Requires at least:	5.0
 Tested up to:		6.6
-Stable tag:			1.4.1
+Stable tag:			1.4.4
 Requires PHP:       7.4
 License:            GPLv3 or later
 License URI:        https://www.gnu.org/licenses/gpl-3.0.html
@@ -18,6 +18,8 @@ Generates a simple sitemap for your site.
 Generates a simple sitemap, listing the page and posts on your site.  You can set which page will become your sitemap, and the sitemap will be automatically inserted with your regular page content.
 
 This plugin is useful in helping your visitors find their way around the site, and is beneficial for search engines crawling your site.
+
+July 2024 - Plugin now comes with a Gutenberg compatible block, allowing you to choose which post-types to show sitemap links for.  The earlier functionality & shortcodes continue to work unchanged.
 
 == Installation ==
 
@@ -45,6 +47,8 @@ No, I haven't build that feature yet.
 
 
 == Changelog ==
+= 1.4.4 =
+* Adding a Gutenberg block, and the build tools that go along with it
 
 = 1.4.3 =
 * Adding /assets/ folder for use on plugin repository

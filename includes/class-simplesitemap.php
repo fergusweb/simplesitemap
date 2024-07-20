@@ -25,6 +25,12 @@ class SimpleSitemap {
 	 */
 	public static $opts = array();
 
+	/**
+	 * Hold the Admin and Public classes
+	 */
+	public static $admin = null;
+	public static $public = null;
+
 
 
 	/**
@@ -34,12 +40,26 @@ class SimpleSitemap {
 		// Preload Options
 		self::load_options();
 
+		// Blocks
+		add_action( 'init', array( $this,'load_blocks' ) );
+
 		// Load front or back end
+		self::$admin = new SimpleSitemap_Admin();
+		self::$public = new SimpleSitemap_Public();
 		if (is_admin()) {
-			new SimpleSitemap_Admin();
+			
 		} else {
-			new SimpleSitemap_Public();
+			
 		}
+	}
+
+	/**
+	 * Load blocks
+	 *
+	 * @return void
+	 */
+	public function load_blocks() {
+		register_block_type( __DIR__ . '/../build/sitemap-block' );
 	}
 
 
@@ -96,6 +116,22 @@ class SimpleSitemap {
 			$options = self::$opts;
         }
 		update_option( self::$option_key, $options );
+	}
+
+
+	/**
+	 * Helper to output Post Types - used in Block
+	 */
+	public static function outputPostType($type, $showHeading) {
+		if ($showHeading) {
+			$ptObject = get_post_type_object( $type );
+			echo '<h3>' . $ptObject->label. '</h3>';
+		}
+		if ( is_post_type_hierarchical( $type ) ) {
+			SimpleSitemap::$public->sitemap_show_hierarchical( $type );
+		} else {
+			SimpleSitemap::$public->sitemap_show_non_hierarchical( $type );
+		}
 	}
 
 }

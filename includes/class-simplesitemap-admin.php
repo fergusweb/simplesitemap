@@ -8,15 +8,8 @@ class SimpleSitemap_Admin {
      * Constructor
      */
     function __construct() {
-        add_action( 'init', array( $this, 'admin_init' ) );
-    }
-
-    /**
-	 *  Admin functions
-	 */
-	public function admin_init() {
 		add_action( 'admin_menu', array( $this, 'admin_menu' ) );
-	}
+    }
 
 	/**
 	 * Admin Menu
@@ -36,7 +29,7 @@ class SimpleSitemap_Admin {
 	 * @return void
 	 */
 	public function admin_enqueue() {
-		wp_enqueue_style( 'simplesitemap', plugins_url( '../css/admin.css', __FILE__ ), null, '1.0' );
+		wp_enqueue_style( 'simplesitemap', plugins_url( '../assets/admin.css', __FILE__ ), null, '1.0' );
 	}
 
 	/**

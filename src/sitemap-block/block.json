@@ -1,0 +1,29 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
+    "name": "sitemap/sitemap-block",
+    "version": "0.1.0",
+    "title": "Sitemap",
+    "category": "widgets",
+    "icon": "editor-ul",
+    "description": "Insert sitemap links for selected post-types",
+    "example": {},
+    "attributes": {
+        "showHeadings": {
+            "type": "boolean",
+            "default": true
+        },
+        "postTypes": {
+            "type": "array"
+        }
+    },
+    "supports": {
+        "html": false,
+        "typography": {
+            "fontSize": true
+        }
+    },
+    "textdomain": "sitemap",
+    "editorScript": "file:./index.js",
+    "render": "file:./render.php"
+}
