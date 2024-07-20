@@ -1,0 +1,20 @@
+{
+  "name": "simplesitemap",
+  "version": "1.4.0",
+  "repository": "https://github.com/fergusweb/simplesitemap",
+  "license": "GPL-3.0",
+  "scripts": {
+    "wp-env": "wp-env",
+    "start": "npm run wp-env start",
+    "debug": "npm run wp-env start --xdebug",
+    "stop": "npm run wp-env stop"
+  },
+  "devDependencies": {
+    "@wordpress/env": "^10.3"
+  },
+  "overrides": {
+    "rimraf": {
+      "glob": "^9"
+    }
+  }
+}
