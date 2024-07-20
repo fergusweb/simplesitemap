@@ -46,8 +46,9 @@ No, I haven't build that feature yet.
 
 == Changelog ==
 
-= 1.4.2 =
+= 1.4.3 =
 * Adding /assets/ folder for use on plugin repository
+* Fix an error in my build/deploy script
 
 = 1.4.1 =
 * Release using github build tools
