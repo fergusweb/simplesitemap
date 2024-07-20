@@ -2,8 +2,8 @@
 Contributors:		ajferg
 Tags:				sitemap, posts, pages
 Requires at least:	3.0
-Tested up to:		4.4
-Stable tag:			1.3
+Tested up to:		6.0
+Stable tag:			1.3.1
 
 Generates a simple sitemap for your site.
 
@@ -39,6 +39,10 @@ No, I haven't build that feature yet.
 
 
 == Changelog ==
+
+= 1.3.1 =
+* Code formatting changes to bring inline with WordPress PHP Code Standards
+* Convert class to singleton model
 
 = 1.3 = 
 * Update code to suit WordPress 4.4 standards
