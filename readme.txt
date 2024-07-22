@@ -4,7 +4,7 @@ Author URI:         https://www.ferguson.codes
 Contributors:		ajferg
 Requires at least:	5.0
 Tested up to:		6.6
-Stable tag:			1.4.4
+Stable tag:			1.4.5
 Requires PHP:       7.4
 License:            GPLv3 or later
 License URI:        https://www.gnu.org/licenses/gpl-3.0.html
@@ -47,6 +47,10 @@ No, I haven't build that feature yet.
 
 
 == Changelog ==
+= 1.4.5 =
+* Realised that renaming plugin to index.php will disable existing installs when updating
+* Go back to old filename for that compatibility.
+
 = 1.4.4 =
 * Adding a Gutenberg block, and the build tools that go along with it
 
